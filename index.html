@@ -1,0 +1,106 @@
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vasconvert-all</title>
+ </head>
+ <body>
+    <div class="container">
+        <h1 class="page-title">
+          Vasconvert-all
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      </div>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <img src="">
+      </a>
+      <style>
+
+  body{
+
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("motospace.jpeg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+      </style>
+
+<script>
+    var valorDistanciaEmMetros = 500;
+    var valorDolar = 50;
+    var cotacaoDolar = 5.32;
+    var cotacaoPound = 6.00;
+    var cotacaoCripto = 10.25;
+    var umAnoLuz = 9.461;
+
+    var nome = prompt('Fala aí, beleza? Podes dizer teu nome?');
+    alert(nome + ', meu amigo, tudo bem contigo? Somos o Vasconvert-all');
+
+    var valorEmReal = prompt('Digite o valor em Real que tu queres converter');
+    var moedaEscolhida = prompt('Escolha a moeda para converter (Dolar/Pound/Cripto)');
+    var resultado;
+
+    if (moedaEscolhida.toLowerCase() === 'dolar') {
+        resultado = valorEmReal * cotacaoDolar;
+        alert('O valor em Dólar é: ' + resultado.toFixed(2));
+    } else if (moedaEscolhida.toLowerCase() === 'pound') {
+        resultado = valorEmReal * cotacaoPound;
+        alert('O valor em Pound é: ' + resultado.toFixed(2));
+    } else if (moedaEscolhida.toLowerCase() === 'cripto') {
+        resultado = valorEmReal * cotacaoCripto;
+        alert('O valor em Cripto é: ' + resultado.toFixed(2));
+    } else {
+        alert('Moeda não reconhecida.');
+    }
+
+    var anosLuzConvertidos = valorDistanciaEmMetros / umAnoLuz;
+    alert('A distância em anos-luz é aproximadamente: ' + anosLuzConvertidos.toFixed(2));
+
+</script>
+
+        
+          
+ </body>
+ </html>
